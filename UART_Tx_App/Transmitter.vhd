@@ -5,8 +5,6 @@
 -- Author1 Dodotronix
 -- Author2 Marex Smida
 
--- TODO variable length of data word not working
-
 ---------------------------------------------------------------
 
 library ieee;
@@ -19,9 +17,9 @@ entity Transmitter is
     -- default clock = 1MHz
     -- clock / 2*baud_rate => 1e6/(2*9600) = 52
     PSC_Period :  integer :=  52; -- clock prescaler
-    p_bit      :  in std_logic_vector(1 downto 0) := "00"; -- parity bit none(0)/even(01)/odd(10)
+    p_bit      :  in std_logic_vector(1 downto 0) := "01"; -- parity bit none(0)/even(01)/odd(10)
     s_bit      :  in std_logic := '0'; -- stop bit length 1 (log0) or 2 log(1)
-    f_len      :  in integer range 5 to 8 := 5 -- frame length 5 - 8 (00 - 11)
+    f_len      :  in integer range 5 to 8 := 8 -- frame length 5 - 8 (00 - 11)
   );
 
   Port(
@@ -38,12 +36,11 @@ architecture Behavioral of Transmitter is
   signal bus_state :  status := Idle;
   
   signal s_ack     :  std_logic := '1' ; -- press button for
-  signal c_ack     :  std_logic; --last ack value
   signal db        :  integer := 0; -- deley to deside if it is bouncing effect or not
   signal tx_active :  std_logic := '0';  -- log1 if bus is busy
 	
   -- UART options signals
-  signal data_word :  std_logic_vector(7 downto 0); -- data word
+  signal data_word :  std_logic_vector(14 downto 0); -- data word
   signal parity_op :  std_logic_vector(1 downto 0); -- parity option none/even/odd
   signal sbit_cnt  :  std_logic; -- number of stop bits (0 or 1)
   signal bit_ctr   :  integer := 0; -- bit counter (index of word)
@@ -104,7 +101,7 @@ begin
 	  bit_ctr <= 0;
 	  done <= 0;
 	  if tx_active  = '1' then
-	    data_word <= sw_panel;
+	    data_word(7 downto 0) <= sw_panel;
 	    parity_op <= p_bit;
 	    sbit_cnt <= s_bit;
 	    f_length <= f_len;
@@ -124,7 +121,7 @@ begin
 	  else
 	    if f_length < 8 and indicator < '1' then -- 8 because size of word is 8 bits
 	      -- shift data right on the lower positions
-	      data_word <= std_logic_vector(shift_right(unsigned(data_word), f_length));
+	      data_word(f_length -1 downto 0) <= data_word((f_length - 1)*2 downto f_length); -- shift bits right
 	      bit_ctr <= 0;
 	      indicator <= '1';
 	    else
@@ -141,8 +138,8 @@ begin
 	when Parity =>
 	  if parity_op = "01" then
 	    tmp_tx <= cal_parity(data_word(f_length - 1 downto 0));
-	  else 
-	    tmp_tx <= cal_parity(data_word(f_length - 1 downto 0));
+	  elsif parity_op = "10" then
+	    tmp_tx <= not cal_parity(data_word(f_length - 1 downto 0));
 	  end if;
 	  bus_state <= Stop_bit;
 	--//Parity
