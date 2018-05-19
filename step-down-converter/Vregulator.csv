@@ -1,0 +1,34 @@
+Title,Vregulator_23W
+Revision,1.0
+Date,2017-11-25
+Generated,Sat 25 Nov 2017 07:19:32 PM CET
+Total Parts,31
+Total Unique Parts,22
+
+
+
+Ref,Qty,Value,Footprint,Datasheet,Price,Shop,
+C1 ,1,3.3nF,Resistors_SMD:R_1206,http://www.mouser.com/ds/2/212/KEM_C1006_X5R_SMD-1103249.pdf,0.323 EUR,https://cz.mouser.com/ProductDetail/KEMET/C1206C335K3PACTU/?qs=sGAEpiMZZMsh%252b1woXyUXj%252bPM2z7lndgKpjdrY%2fMgCeo%3d
+C2 ,1,450pF,Resistors_SMD:R_1206,http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf,0.085 EUR,https://cz.mouser.com/ProductDetail/Vishay-Vitramon/VJ1206Y471KXAPW1BC/?qs=sGAEpiMZZMs0AnBnWHyRQAR7at33PD0%252b6L0Zdac%2fCgs%3d
+C3 C11 ,2,22uF,Resistors_SMD:R_1206,http://www.mouser.com/ds/2/281/c02e-2905.pdf,0.417 EUR,https://cz.mouser.com/ProductDetail/Murata-Electronics/GRM31CR61C226KE15L/?qs=sGAEpiMZZMsh%252b1woXyUXjz0P1wxkG4BtSjnEL9iU2ec%3d
+C4 ,1,10nF,Resistors_SMD:R_1206,http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf,0.085 EUR,https://cz.mouser.com/ProductDetail/Vishay-Vitramon/VJ1206Y103KXXCW1BC/?qs=sGAEpiMZZMs0AnBnWHyRQLWhsuYvNua1NbY6Zzcttzo%3d
+C5 ,1,1uF,Resistors_SMD:R_1206,http://www.mouser.com/ds/2/447/Yageo_UPY-GP_NP0_16V-to-50V_9-1211922.pdf,0.145 EUR,https://cz.mouser.com/ProductDetail/Yageo/CC1206KKX7R8BB105/?qs=sGAEpiMZZMsh%252b1woXyUXj2i9A4b3OdfQLtdnsejugzE%3d
+C6 ,1,1uF,Capacitors_SMD:C_1206,http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf,0.085 EUR,https://cz.mouser.com/ProductDetail/Vishay-Vitramon/VJ1206V105MXQTW1BC/?qs=sGAEpiMZZMsh%252b1woXyUXj3VLYl%252bHgDYmycqB3oAQvmg%3d
+C7 ,1,100nF,Resistors_SMD:R_0805,http://www.mouser.com/ds/2/445/885012207072-554776.pdf,0.06 EUR,https://cz.mouser.com/ProductDetail/Wurth-Electronics/885012207072/?qs=sGAEpiMZZMs0AnBnWHyRQEGbLOF2VP1ibTWUyjubWr0tPlz%2f3fbAWQ%3d%3d
+C8 ,1,4.7uF,Resistors_SMD:R_0805,http://www.mouser.com/ds/2/281/c02e-2905.pdf,0.17 EUR,https://cz.mouser.com/ProductDetail/Murata-Electronics/GRM21BR61E475KA12L/?qs=sGAEpiMZZMsh%252b1woXyUXj7Ax4K3SW3FrAb7rYCAGTGw%3d
+C9 ,1,220uF,Capacitors_SMD:CP_Elec_6.3x7.7,http://www.mouser.com/ds/2/231/147850140127-1107728.pdf,0.238 EUR,https://cz.mouser.com/ProductDetail/Lelon/VZL221M1CTR-0607/?qs=sGAEpiMZZMtZ1n0r9vR22cpFQt4dfSbq9ctJ%252b1pK7lzM2ojAUo4dbQ%3d%3d
+C10 ,1,1.2nF,Resistors_SMD:R_1206,http://www.mouser.com/ds/2/40/X7RDielectric-777024.pdf,0.281 EUR,https://cz.mouser.com/ProductDetail/AVX/12063C123JAT2A/?qs=sGAEpiMZZMs0AnBnWHyRQKdiqyDPVQdAwLniRtjWBSU%3d
+J1 J2 J3 J4 J5 J6 ,6,Conn_01x01,Connectors_TestPoints:Test_Point_Keystone_5015_Micro-Minature,, , 
+L1 ,1,1.8uH,Inductors_SMD:L_Vishay_IHLP-4040,http://www.mouser.com/ds/2/427/lp40dz11-222772.pdf,2.17 EUR,https://cz.mouser.com/ProductDetail/Vishay-Dale/IHLP4040DZER1R8M11/?qs=sGAEpiMZZMsg%252by3WlYCkUyp1vkfS54wL7OPqDHul1Cg%3d
+Q1 Q2 ,2,IGFET_N,trans_custom_pkg:VSON-8_3.3x3.3mm_Pitch0.65mm_NexFET,http://www.ti.com/lit/ds/symlink/csd17579q3a.pdf,0.544 EUR,https://cz.mouser.com/ProductDetail/Texas-Instruments/CSD17579Q3AT/?qs=sGAEpiMZZMshyDBzk1%2fWi48qxRsdBIlgeJK0zDxj4165sxbshqU78g%3d%3d
+R1 ,1,1k4,Resistors_SMD:R_1206,http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf,0.085 EUR,https://cz.mouser.com/ProductDetail/Vishay/CRCW12061K40FKEA/?qs=sGAEpiMZZMtlubZbdhIBIE9Nj%2fZ3XBsuId%2fE%2fSdS304%3d
+R2 R8 ,2,10k,Resistors_SMD:R_1206,http://www.mouser.com/ds/2/315/AOA0000C307-1149632.pdf,0.663 EUR,https://cz.mouser.com/ProductDetail/Panasonic/ERA-8AEB103V/?qs=sGAEpiMZZMtlubZbdhIBINYapuLw0JH33FbEgILkusI%3d
+R3 R9 ,2,2k32,Resistors_SMD:R_1206,http://www.mouser.com/ds/2/447/yageodocoutput-1111992.pdf,0.085 EUR,https://cz.mouser.com/ProductDetail/Yageo/AC1206FR-07100KL/?qs=sGAEpiMZZMtlubZbdhIBIOG3KwTtqrl%2fGx72FR%2fDa2Q%3d
+R4 ,1,100k,Resistors_SMD:R_1206,http://www.mouser.com/ds/2/447/PYu-RC1206_51_RoHS_L-4-349080.pdf,0.085 EUR,https://cz.mouser.com/ProductDetail/Yageo/RC1206FR-07100KL/?qs=sGAEpiMZZMtlubZbdhIBINNnCgAqWV6vON6Wzl3HpWU%3d
+R5 ,1,19k3,Resistors_SMD:R_0805,http://www.mouser.com/ds/2/427/tnpw_e3-64594.pdf,0.192 EUR,https://cz.mouser.com/ProductDetail/Vishay/TNPW080519K3BEEA/?qs=sGAEpiMZZMu61qfTUdNhG8xHgGrOSb3kOVvM9gPsjSQ%3d
+R6 ,1,30k1,Resistors_SMD:R_0805,http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf,0.085 EUR,https://cz.mouser.com/ProductDetail/Vishay/CRCW080530K1FKEA/?qs=sGAEpiMZZMtlubZbdhIBIG5jtmN5%2fKF0nCCdkNBuB3M%3d
+R7 ,1,453,Resistors_SMD:R_1206,http://www.mouser.com/ds/2/315/AOA0000C304-1149620.pdf,0.085 EUR,https://cz.mouser.com/ProductDetail/Panasonic/ERJ-8ENF4530V/?qs=sGAEpiMZZMtlubZbdhIBIOIpaOjkYUZGePiEzVXcNQo%3d
+U1 ,1,TPS40304,Housings_SON:VSON-10-1EP_3x3mm_Pitch0.5mm_ThermalPad,http://www.ti.com/lit/ds/symlink/tps40305.pdf,2.20 EUR,https://cz.mouser.com/ProductDetail/Texas-Instruments/TPS40304DRCR/?qs=sGAEpiMZZMvFgFrcgbsedcZOTL%2fNz%252bs2%252bZCb7C%252b%252beK0%3d
+U2 ,1,TPS75601,TO_SOT_Packages_SMD:TO-263-5_TabPin3,http://www.ti.com/lit/ds/slvs329c/slvs329c.pdf,5.81 EUR,https://cz.mouser.com/ProductDetail/Texas-Instruments/TPS75601KTTT/?qs=sGAEpiMZZMsGz1a6aV8DcPXeWoVS0Fnz7NwWLZys5R4%3d
+
+
